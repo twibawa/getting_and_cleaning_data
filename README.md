@@ -13,7 +13,9 @@ The assignment 2 required only dataset which contain mean and standard deviation
 
 The assignment 3 is related to replace six volunteers activities by its description mentioned within activity labels which was read previously. The file was separated its contains, and a dataframe with two coloumns was constructed. The first coloumn relates to number of activity (1,2,3,4,5,6), and the second was its description. Then a looping was conducted to change activity information within dataset. It's mainly conducted using gsub() function.
 
-The assignment 4 is conducted to replace header name of dataset with variable names. So, 
+The assignment 4 is conducted to replace header name of dataset with variable names. So, as assignment 2, the filtered feature were splitted, and extracted its description, for example "1 tBodyAcc-mean()-X" was splitted to extract tBodyAcc-mean()-X. Then a vector called header, which contains subject(no of volunters), action(activity) and extracted feature names was constructed. As the dataset has the similar coloumn number with the vector, the header names of dataset were easily replaced with the vector by using colnames() function.
+
+The assignement 5 is conducted to calculate mean of each variable for each of activity and volunteer number. A ddply() function from plyr library was employed and the result was written using write.table() function.
 
 
 
